@@ -10,13 +10,13 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="nav-logo">
         <img src={logo} width="50" alt="" />
-        <p>SHOES</p>
+        <p>SHOES.COM</p>
       </div>
       <ul className="nav-menu">
-        <li onClick={() => setMenu("shop")}><Link to='/'>Shop</Link>{menu === "shop" ? <hr /> : null}</li>
-        <li onClick={() => setMenu("style")}><Link to='/style'>Style</Link>{menu === "style" ? <hr /> : null}</li>
-        <li onClick={() => setMenu("sandals")}><Link to='/sandals'>Sandals</Link>{menu === "sandals" ? <hr /> : null}</li>
-        <li onClick={() => setMenu("casual")}><Link to='/casual'>Casual</Link>{menu === "casual" ? <hr /> : null}</li>
+        <li onClick={() => setMenu("shop")}><Link style={{textDecoration: 'none'}} to='/'>Shop</Link>{menu === "shop" ? <hr /> : null}</li>
+        <li onClick={() => setMenu("style")}><Link style={{textDecoration: 'none'}} to='/style'>Style</Link>{menu === "style" ? <hr /> : null}</li>
+        <li onClick={() => setMenu("sandals")}><Link style={{textDecoration: 'none'}} to='/sandals'>Sandals</Link>{menu === "sandals" ? <hr /> : null}</li>
+        <li onClick={() => setMenu("casual")}><Link style={{textDecoration: 'none'}} to='/casual'>Casual</Link>{menu === "casual" ? <hr /> : null}</li>
       </ul>
       <div className="nav-login-cart">
         <Link to='/login'><button>Login</button></Link>
