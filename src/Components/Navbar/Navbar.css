@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.nav-menu h {
+.nav-menu hr {
     border: none;
     width: 80%;
     height: 5px;
