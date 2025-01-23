@@ -1,21 +1,42 @@
 /* NewCollections.css */
 
 .new-collections {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.new-collections h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .collections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 30px;
 }
 
 .collections img {
-    width: 100px;
-    /* Atur ukuran gambar ke 100px (atau sesuai kebutuhan) */
-    height: auto;
-    /* Jaga rasio aspek */
-    object-fit: contain;
-    /* Pastikan gambar tidak terdistorsi */
+    width: 370px;
+    /* Lebar gambar */
+    height: 370px;
+    /* Tinggi gambar */
+    object-fit: cover;
+    /* Agar gambar tidak terdistorsi */
+    border-radius: 10px;
+    /* Membuat sudut gambar melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bayangan gambar */
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #984738;
 }
