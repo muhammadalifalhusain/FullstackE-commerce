@@ -97,22 +97,52 @@
     /* Small screens */
     .hero {
         flex-direction: column;
-        /* Stack elements vertically */
+        /* Mengubah arah flex menjadi kolom */
         height: auto;
+        /* Mengubah tinggi menjadi auto */
         padding: 20px;
+        /* Menambahkan padding */
     }
     .hero-left {
         padding-left: 0;
+        /* Menghapus padding kiri */
         text-align: center;
+        /* Menyelaraskan teks ke tengah */
         gap: 15px;
+        /* Mengurangi gap */
     }
     .hero-left p {
         font-size: 40px;
+        /* Mengurangi ukuran font */
     }
     .hero-right {
         margin-top: 20px;
+        /* Menambahkan margin atas */
+        display: flex;
+        /* Menjaga elemen tetap fleksibel */
+        justify-content: center;
+        /* Menyelaraskan konten ke tengah */
     }
     .hero-right img {
         width: 250px;
+        /* Mengurangi ukuran gambar */
+    }
+}
+
+
+/* Media Query untuk Ukuran Kecil */
+
+@media (max-width: 480px) {
+    .hero-left {
+        gap: 10px;
+        /* Mengurangi gap lebih lanjut */
+    }
+    .hero-left p {
+        font-size: 30px;
+        /* Ukuran font lebih kecil */
+    }
+    .hero-right img {
+        width: 200px;
+        /* Ukuran gambar lebih kecil */
     }
 }

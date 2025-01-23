@@ -14,7 +14,6 @@
 }
 
 .newsletter h1 {
-    columns: gray;
     color: white;
     font-size: 55px;
     font-weight: 600;
@@ -55,4 +54,76 @@
     background: black;
     font-size: 15px;
     cursor: pointer;
+}
+
+
+/* Media Queries untuk Responsivitas */
+
+@media (max-width: 768px) {
+    /* Ukuran layar medium */
+    .newsletter {
+        width: 90%;
+        /* Lebar lebih besar untuk layar kecil */
+        padding: 0 20px;
+        /* Padding lebih kecil */
+    }
+    .newsletter h1 {
+        font-size: 40px;
+        /* Ukuran font lebih kecil */
+    }
+    .newsletter p {
+        font-size: 18px;
+        /* Ukuran font lebih kecil */
+    }
+    .newsletter div {
+        width: 100%;
+        /* Lebar div 100% */
+        /* Tetap menggunakan flex-direction: row untuk menjaga tata letak horizontal */
+    }
+    .newsletter input {
+        width: 500px;
+        /* Tetap menggunakan lebar input yang sama */
+        margin-left: 30px;
+        /* Mengembalikan margin kiri */
+        margin-bottom: 0;
+        /* Menghapus margin bawah */
+    }
+    .newsletter div button {
+        width: 210px;
+        /* Tombol tetap dengan lebar yang sama */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ukuran layar small */
+    .newsletter {
+        height: auto;
+        /* Mengubah tinggi menjadi auto */
+        padding: 0 10px;
+        /* Padding lebih kecil */
+    }
+    .newsletter h1 {
+        font-size: 30px;
+        /* Ukuran font lebih kecil */
+    }
+    .newsletter p {
+        font-size: 16px;
+        /* Ukuran font lebih kecil */
+    }
+    .newsletter div {
+        flex-direction: column;
+        /* Mengubah arah flex menjadi kolom */
+    }
+    .newsletter input {
+        width: 100%;
+        /* Input mengambil 100% lebar */
+        margin-left: 0;
+        /* Menghapus margin kiri */
+        margin-bottom: 10px;
+        /* Menambahkan margin bawah */
+    }
+    .newsletter div button {
+        width: 100%;
+        /* Tombol mengambil 100% lebar */
+    }
 }

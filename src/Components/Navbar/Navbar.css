@@ -1,6 +1,9 @@
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Mengubah menjadi space-between untuk hamburger */
+    align-items: center;
+    /* Menyelaraskan item di tengah */
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
 }
@@ -9,12 +12,34 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 70px;
 }
 
 .nav-logo p {
-    columns: black;
+    color: black;
     font-size: 35px;
+    /* Ukuran font default */
     font-weight: 600;
+}
+
+
+/* Responsivitas untuk ukuran layar medium dan kecil */
+
+@media (max-width: 768px) {
+    .nav-logo p {
+        font-size: 28px;
+        /* Ukuran font lebih kecil pada layar medium */
+    }
+    .nav-logo {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo p {
+        font-size: 24px;
+        /* Ukuran font lebih kecil pada layar kecil */
+    }
 }
 
 .nav-menu {
@@ -49,47 +74,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Atur distribusi elemen */
     gap: 2rem;
-    /* Gunakan unit responsif */
     padding: 1rem;
-    /* Tambahkan padding internal */
 }
 
 .nav-login-cart button {
     width: 150px;
-    /* Atur ukuran lebih fleksibel */
     height: 48px;
     padding: 0.5rem 1rem;
-    /* Tambahkan padding */
     outline: none;
     border: 1px solid #7a7a7a;
     border-radius: 50px;
-    /* Kurangi radius agar lebih proporsional */
     color: white;
     font-size: 1rem;
-    /* Gunakan unit responsif */
     font-weight: 500;
     background: #984738;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* Tambahkan transisi */
 }
 
 .nav-login-cart button:hover {
     background: #f0f0f0;
-    /* Warna latar belakang saat hover */
     border-color: #515151;
-    /* Warna border saat hover */
     transform: scale(1.05);
-    /* Sedikit perbesar tombol */
 }
 
 .nav-login-cart button:active {
     background: #e0e0e0;
-    /* Warna saat tombol ditekan */
     transform: scale(0.95);
-    /* Sedikit perkecil tombol */
 }
 
 .nav-cart-count {
@@ -104,4 +116,82 @@
     font-size: 14px;
     background: #984738;
     color: white;
+}
+
+
+/* Hamburger Menu Styles */
+
+.hamburger {
+    display: none;
+    /* Sembunyikan hamburger secara default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: brown;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+/* Responsivitas */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        /* Sembunyikan menu secara default pada layar kecil */
+        flex-direction: column;
+        /* Ubah arah menu menjadi kolom */
+        position: absolute;
+        /* Posisi absolut untuk overlay */
+        top: 60px;
+        /* Sesuaikan posisi menu */
+        right: 0;
+        /* Posisi di sebelah kanan */
+        background-color: white;
+        /* Latar belakang putih */
+        width: 100%;
+        /* Lebar 100% */
+        z-index: 1;
+        /* Pastikan menu di atas elemen lain */
+    }
+    .nav-menu.open {
+        display: flex;
+        /* Tampilkan menu ketika open */
+    }
+    .hamburger {
+        display: flex;
+        /* Tampilkan hamburger pada layar kecil */
+    }
+    .nav-menu li {
+        padding: 10px 20px;
+        /* Tambahkan padding untuk item menu */
+        text-align: center;
+        /* Rata tengah teks */
+    }
+    .nav-login-cart {
+        display: none;
+        /* Sembunyikan menu login pada layar kecil */
+    }
+}
+
+
+/* Ikon Cart Styles */
+
+.nav-cart-icon {
+    display: inline-block;
+    /* Tampilkan ikon cart pada layar kecil */
+}
+
+
+/* Responsivitas untuk menampilkan ikon cart pada layar kecil */
+
+@media (max-width: 480px) {
+    .nav-cart-icon {
+        display: inline-block;
+        /* Tampilkan ikon cart pada layar kecil */
+    }
 }
