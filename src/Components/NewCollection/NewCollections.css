@@ -1,0 +1,21 @@
+/* NewCollections.css */
+
+.new-collections {
+    text-align: center;
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collections img {
+    width: 100px;
+    /* Atur ukuran gambar ke 100px (atau sesuai kebutuhan) */
+    height: auto;
+    /* Jaga rasio aspek */
+    object-fit: contain;
+    /* Pastikan gambar tidak terdistorsi */
+}
