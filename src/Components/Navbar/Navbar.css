@@ -66,11 +66,11 @@
     border: 1px solid #7a7a7a;
     border-radius: 50px;
     /* Kurangi radius agar lebih proporsional */
-    color: #515151;
+    color: white;
     font-size: 1rem;
     /* Gunakan unit responsif */
     font-weight: 500;
-    background: white;
+    background: #984738;
     cursor: pointer;
     transition: all 0.3s ease;
     /* Tambahkan transisi */

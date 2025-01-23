@@ -1,0 +1,39 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular-item img {
+    width: 370px;
+    /* Lebar gambar */
+    height: 370px;
+    /* Tinggi gambar */
+    object-fit: cover;
+    /* Mengatur tampilan gambar agar tidak terdistorsi */
+    border-radius: 10px;
+    /* Opsional: membuat sudut gambar melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Opsional: menambahkan bayangan */
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: black;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
