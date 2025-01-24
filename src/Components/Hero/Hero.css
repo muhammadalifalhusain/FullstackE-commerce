@@ -25,6 +25,7 @@
 .hero-left p {
     color: #171717;
     font-size: 80px;
+    /* Ukuran font default */
     font-weight: 700;
 }
 
@@ -62,39 +63,51 @@
 
 .hero-right img {
     width: 400px;
+    /* Ukuran gambar default */
 }
 
 
 /* Responsivitas */
 
+
+/* Untuk layar besar */
+
 @media (max-width: 1200px) {
-    /* Large screens */
     .hero-left {
         padding-left: 100px;
     }
     .hero-left p {
         font-size: 60px;
+        /* Ukuran font lebih kecil */
     }
     .hero-right img {
         width: 350px;
+        /* Ukuran gambar lebih kecil */
     }
 }
 
+
+/* Untuk layar medium */
+
 @media (max-width: 992px) {
-    /* Medium screens */
     .hero-left {
         padding-left: 50px;
+        /* Mengurangi padding */
     }
     .hero-left p {
         font-size: 50px;
+        /* Ukuran font lebih kecil */
     }
     .hero-right img {
         width: 300px;
+        /* Ukuran gambar lebih kecil */
     }
 }
 
+
+/* Untuk layar kecil */
+
 @media (max-width: 768px) {
-    /* Small screens */
     .hero {
         flex-direction: column;
         /* Mengubah arah flex menjadi kolom */
@@ -108,11 +121,12 @@
         /* Menghapus padding kiri */
         text-align: center;
         /* Menyelaraskan teks ke tengah */
-        gap: 15px;
+        gap: 10px;
         /* Mengurangi gap */
     }
     .hero-left p {
-        font-size: 40px;
+        font-size: 22px;
+        margin-left: 50;
         /* Mengurangi ukuran font */
     }
     .hero-right {

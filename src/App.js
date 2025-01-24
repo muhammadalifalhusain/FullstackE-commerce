@@ -7,6 +7,7 @@ import Product from './Pages/Product';
 import Shop from './Pages/Shop'
 import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignUp';
+import ProductDetail from './Components/ProductDetail/ProductDetail';
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
+        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path='/style' element={<ShopCategory category = "style"/>}/>
         <Route path='/sandals' element={<ShopCategory category = "sandals"/>}/>
         <Route path='/casual' element={<ShopCategory category = "casual"/>}/>
