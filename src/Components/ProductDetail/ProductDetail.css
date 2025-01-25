@@ -9,9 +9,9 @@
 /* Nama produk */
 
 .product-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 
@@ -19,28 +19,27 @@
 
 .product-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 30px;
+    gap: 40px;
 }
 
 
-/* Gambar detail (di sebelah kiri) */
+/* Gambar detail (di sebelah kiri layar) */
 
 .product-details {
-    border: 2px solid black;
-    /* Garis hitam di sekitar cart */
-    border-radius: 10px;
-    /* Membuat sudut agak membulat */
-    padding: 5px;
-    /* Memberikan ruang antara gambar dan garis */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    align-items: flex-start;
+    /* Membuat gambar detail lebih mepet ke kiri */
+    margin-left: 20px;
+    /* Menjaga jarak sedikit dari tepi layar */
 }
 
 .detail-image {
-    max-width: 80px;
+    max-width: 100px;
+    /* Membuat gambar thumbnail lebih besar */
     height: auto;
     border-radius: 5px;
     cursor: pointer;
@@ -60,13 +59,12 @@
     border: 2px solid black;
     /* Garis hitam di sekitar cart */
     border-radius: 10px;
-    /* Membuat sudut agak membulat */
     padding: 5px;
-    /* Memberikan ruang antara gambar dan garis */
 }
 
 .main-image {
-    max-width: 300px;
+    max-width: 380px;
+    /* Membuat gambar utama lebih besar */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
@@ -78,35 +76,41 @@
 }
 
 
-/* Informasi produk (di sebelah kanan) */
+/* Informasi produk (di bawah gambar utama) */
 
 .product-info {
-    text-align: left;
-    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    /* Mengatur teks di tengah */
 }
 
 .product-price {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #984738;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .product-description {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .buy-now-button {
-    padding: 10px 20px;
-    background-color: #984738;
+    width: 150px;
+    height: 48px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 50px;
     color: white;
-    border: none;
-    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #984738;
     cursor: pointer;
-    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .buy-now-button:hover {
-    background-color: #984738;
+    background-color: gray;
 }
