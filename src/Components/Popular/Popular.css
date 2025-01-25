@@ -3,26 +3,14 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .popular h1 {
     color: black;
     font-size: 50px;
     font-weight: 600;
-}
-
-.popular-item img {
-    width: 370px;
-    /* Lebar gambar */
-    height: 370px;
-    /* Tinggi gambar */
-    object-fit: cover;
-    /* Mengatur tampilan gambar agar tidak terdistorsi */
-    border-radius: 10px;
-    /* Opsional: membuat sudut gambar melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Opsional: menambahkan bayangan */
 }
 
 .popular hr {
@@ -32,8 +20,39 @@
     background: #984738;
 }
 
-.popular-item {
-    margin-top: 50px;
+.popular-slider {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    /* Indikator kursor untuk drag */
+    width: 80%;
+    /* Sesuaikan lebar container */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.popular-slider:active {
+    cursor: grabbing;
+    /* Saat drag aktif */
+}
+
+.slider-item {
+    flex: 0 0 calc(25% - 10px);
+    /* 4 item dalam satu baris */
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
