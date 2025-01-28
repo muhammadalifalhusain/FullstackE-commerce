@@ -45,7 +45,9 @@ const Popular = () => {
               id={item.id}
               name={item.name}
               image={item.image}
-              price={item.price}
+              price_new={item.price_new}
+              price_old={item.price_old}
+             
             />
           </div>
         ))}

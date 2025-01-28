@@ -43,7 +43,7 @@ const ProductDetail = () => {
         {/* Informasi produk */}
         <div className="product-info">
           <p className="product-description">{product.description}</p>
-          <p className="product-price">Rp. {product.price}</p>
+          <p className="product-price">Rp. {product.price_new}</p>
           <button className="buy-now-button">Beli Sekarang</button>
         </div>
       </div>

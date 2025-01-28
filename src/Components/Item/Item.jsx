@@ -15,10 +15,10 @@ const Item = (props) => {
       <p>{props.name}</p>
       <div className="item-prices">
         <div className="item-price-new">
-          Rp. {props.price}
+          Rp. {props.price_new}
         </div>
         <div className="item-price-old">
-          Rp. {props.price}
+          Rp. {props.price_old}
         </div>
       </div>
     </div>

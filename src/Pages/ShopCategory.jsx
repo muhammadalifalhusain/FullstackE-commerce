@@ -19,7 +19,7 @@ const ShopCategory = ({ category }) => {
       </div>
       <div className="shopcategory-products">
         {all_product &&
-          all_product.map((item, i) => {
+          all_product.map((item) => {
             if (category && category === item.category) {
               return (
                 <Item
@@ -27,7 +27,8 @@ const ShopCategory = ({ category }) => {
                   id={item.id}
                   name={item.name}
                   image={item.image}
-                  price={item.price}
+                  price_old={item.price_old}
+                  price_new={item.price_new}
                   className="product-item"
                 />
               );
