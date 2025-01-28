@@ -9,6 +9,7 @@ import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignUp';
 import ProductDetail from './Components/ProductDetail/ProductDetail';
 import Footer from './Components/Footer/Footer';
+
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/style' element={<ShopCategory category = "style"/>}/>
         <Route path='/sandals' element={<ShopCategory category = "sandals"/>}/>
         <Route path='/casual' element={<ShopCategory category = "casual"/>}/>
+        <Route path='/running' element={<ShopCategory category = "running"/>}/>
         <Route path="/product" element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>

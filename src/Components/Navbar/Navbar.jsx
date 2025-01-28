@@ -28,6 +28,7 @@ const Navbar = () => {
         <li onClick={() => { setMenu("style"); setIsOpen(false); }}><Link style={{ textDecoration: 'none' }} to='/style'>Style</Link>{menu === "style" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("sandals"); setIsOpen(false); }}><Link style={{ textDecoration: 'none' }} to='/sandals'>Sandals</Link>{menu === "sandals" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("casual"); setIsOpen(false); }}><Link style={{ textDecoration: 'none' }} to='/casual'>Casual</Link>{menu === "casual" ? <hr /> : null}</li>
+        <li onClick={() => { setMenu("runnning"); setIsOpen(false); }}><Link style={{ textDecoration: 'none' }} to='/running'>Running</Link>{menu === "running" ? <hr /> : null}</li>
         {/* Menu Login hanya muncul di hamburger menu pada layar kecil */}
         {isOpen && (
           <li onClick={() => { setIsOpen(false); }}><Link style={{ textDecoration: 'none' }} to='/login'>Login</Link></li>
