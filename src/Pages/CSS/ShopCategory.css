@@ -18,7 +18,7 @@
 }
 
 .shopcategory-sort img {
-    width: 15px;
+    width: 10px;
 }
 
 .shopcategory-sort:hover {
@@ -33,10 +33,10 @@
 }
 
 .shopcategory-products {
-    margin: 20px auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 35px;
     max-width: 1200px;
     padding: 10px;
 }
@@ -56,4 +56,18 @@
 .shop-category {
     padding: 20px 0;
     background-color: #f9f9f9;
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    width: 200px;
+    height: 70px;
+    border-radius: 60px;
+    background: #ededed;
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
 }
